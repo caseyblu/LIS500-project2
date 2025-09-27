@@ -48,3 +48,37 @@ button {
 button:hover {
   background-color: #2e9c2e; /* lighter green on hover, matches h2 */
 }
+
+/* resource page styles */
+
+.resource-wrap {
+    display: grid;
+    grid-template-columns: 12em 1fr;
+    grid-template-rows: auto 1fr auto;
+    width: 80%;
+}
+
+.resource-header {
+    grid-column: span 2;
+    margin-bottom: 5px;
+}
+
+.site-nav {
+    grid-row: span 2;
+    margin-top: 2em;
+}
+
+.book-image {
+  height: 200px;
+  float:left;
+  margin-right: 5px;
+  margin-bottom: 1em;
+}
+
+.booklist {
+    margin-bottom: 1em;
+    clear: left;
+
+}
+
+/* end resource page styles*/
