@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Guide</title>
+    <link rel="stylesheet" href="resource-guide-styles.css">
+</head>
+
+<body class="resource-wrap">
+    <header class="resource-header">
+        <h1>Implicit Bias and Intersectionality</h1>
+        <h3>Resources and Reading List</h3>
+    </header>
+
+    <div class="site-nav">
+        <ul>
+            <li><button><a href="index.html">Home</a></button></li>
+            <li><button><a href="about.html">About Us</a></button></li>
+            <li><button> <a href="techhero.html">Tech Hero</a></button></li>
+            <li><button><a href="resource-guide.html">Resource Guide</a></button></li>
+        </ul>
+    </div>
+
+    <main>
+        <div>
+            <h2>What is Intersectionality?</h2>
+            <p>Intersectionality is a concept that Kimberle Crenshaw first explored in her 1989 essay for the Harvard Law Review <a href="https://blogs.law.columbia.edu/critique1313/files/2020/02/1229039.pdf" target="_blank"> Mapping the Margins:Intersectionality, Identity, Politics, and Violence against Women of Color</a> (content warning for frank discussions of sexual violence). <a href="https://www.asanet.org/patricia-hill-collins/" target="_blank">Patricia Hill Collins</a> sociologist and professor emerita at University of Maryland, offers this definition:
+                     "the critical insight that race, class, gender, sexuality, ethnicity, nation, ability, and age operate not as unitary, mutually exclusive entities, but as reciprocally constructing phenomena that in turn shape complex social inequalities."
+                    </p>
+                    <h3>Crenshaw, explaining intersectionality in her own words</h3>
+            <div><iframe width="560" height="315" src="https://www.youtube.com/embed/akOe5-UsQ2o?si=hxU9rDdUuUkS-Vhk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        </div>
+        <div>
+            <h2>What is Implicit Bias?</h2>
+                <p>Implicit bias is a concept and body of research that attempts to explain ways in which people may hold—and act on—biases, prejudices, and stereotypes they may not be fully aware of.  These biases are typically learned negative associations with particular marginalized or minoritized groups, and operate against stated, concsiously held beliefs. The <a href="https://plato.stanford.edu/archives/sum2021/entries/implicit-bias/"> Stanford Encyclopedia of Philosophy </a> offers an excellent intellectual history and deeper exploration of the topic.</p>
+                <p>One way of measuring implicit bias is through tests like <a href="https://implicit.harvard.edu/implicit/iatdetails.html">Harvard's Implicit Association Test</a>.
+                Here's how <a href="https://implicit.harvard.edu/implicit/aboutus.html"> Harvard's Project Implicit </a>explains the test: "The IAT measures the strength of associations between concepts (e.g., black people, gay people) and evaluations (e.g., good, bad) or stereotypes (e.g., athletic, clumsy). The main idea is that making a response is easier when closely related items share the same response key.</p>
+        </div>
+        
+
+        <div>
+            <h2>Reading List</h2>
+                <div class="booklist">
+                    <a href="https://doi.org/10.7551/mitpress/14234.001.0001" target="_blank">
+                    <img class="book-image" src="images/more-than-a-glitch.jpeg" alt="More Than a Glitch"></a> 
+                        <h3> <a href=https://direct.mit.edu/books/book/5555/More-than-a-GlitchConfronting-Race-Gender-and target="_blank">More Than a Glitch </a></h3>
+                   <p class="blurb">Data scientist and AI researcher Merideth Broussard's exploration of bias in technology, the myth of tech-neutrality, and case for excising problematic algorithms at the root.</p>
+                </div>
+                <div class="booklist">
+                    <a href="https://nyupress.org/9781479837243/algorithms-of-oppression" target="_blank">
+                     <img class="book-image" src="images/algorithms-of-oppression.jpg" alt="Algorithms of Oppression"></a>
+                    <h3> <a href="https://nyupress.org/9781479837243/algorithms-of-oppression" target="_blank">Algorithms of Oppression</a></h3>
+                    <p class="blurb">Safiya Umoja Noble's book lays bare the biases built into search engines and search results.</p>
+                </div>
+                <div class="booklist"> 
+                    <a href="https://www.penguinrandomhouse.com/books/37354/women-race-and-class-by-angela-y-davis/" target="_blank">
+                        <img class="book-image" src="images/women-race-class.jpg" alt="Women, Race, & Class"></a>
+                    <h3> <a href="https://www.penguinrandomhouse.com/books/37354/women-race-and-class-by-angela-y-davis/" target="_blank">Women, Race, & Class</a></h3>
+                    <p class="blurb">Angela Y. Davis's classic shows how whiteness and elitism complicated and hindered social justice movements in America.</p>
+                </div>
+        </div>
+    </main>
+
+</body>
