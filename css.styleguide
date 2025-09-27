@@ -81,4 +81,8 @@ button:hover {
 
 }
 
+.blurb {
+    width: 50%;
+}
+
 /* end resource page styles*/
