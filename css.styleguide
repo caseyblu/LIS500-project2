@@ -1,30 +1,30 @@
-/* Reset */
+/* ---------------- Reset ---------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* General page styling */
+/* ---------------- General page styling ---------------- */
 body {
   font-family: Arial, sans-serif;
-  background-color: #fdfaf5; /* very light tan */
-  color: #222; /* darker gray for body text */
+  background-color: #fdfaf5; /* light tan */
+  color: #2a2a2a; /* darker gray for body text */
   line-height: 1.6;
   padding: 20px;
 }
 
-/* Headings */
+/* ---------------- Headings ---------------- */
 h1 {
   color: #228B22; /* forest green */
 }
 
 h2 {
   margin-top: 20px;
-  color: #2e9c2e; /* slightly lighter green than h1 */
+  color: #2e8b57; /* lighter green */
 }
 
-/* Links */
+/* ---------------- Links ---------------- */
 a {
   color: #d73a49; /* GitHub red */
   text-decoration: none;
@@ -34,17 +34,73 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Buttons */
+/* ---------------- Buttons ---------------- */
 button {
-  background-color: #228B22; /* forest green to match h1 */
+  background-color: #28a745; /* GitHub green */
   color: white;
   border: none;
   padding: 8px 12px;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #2e9c2e; /* lighter green on hover, matches h2 */
+  background-color: #218838;
+}
+
+/* ---------------- Tech Hero Section ---------------- */
+.tech-hero {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 20px;
+}
+
+.hero-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  flex: 0 0 160px;
+  max-width: 160px;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.hero-image .caption {
+  font-size: 12px;
+  color: #555;
+  margin-top: 6px;
+}
+
+.hero-text h2 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+}
+
+.hero-text p {
+  margin: 8px 0;
+  line-height: 1.5;
+  color: #222; /* darker than body for readability */
+}
+
+.tech-hero hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 18px 0;
+}
+
+.references {
+  font-size: 13px;
+  color: #444;
 }
