@@ -111,14 +111,14 @@ button:hover {
 }
 
 .hero-image {
-  flex: 0 0 160px;
-  max-width: 160px;
+  flex: 0 0 200px; /* increased size */
+  max-width: 200px;
   text-align: center;
 }
 
 .hero-image img {
-  width: 160px;
-  height: 160px;
+  width: 200px; /* increased size */
+  height: 200px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
@@ -166,13 +166,4 @@ button:hover {
 
 .references li {
   margin-bottom: 4px;
-}
-
-/* Optional: headings for consistency with your global style */
-h1 {
-  color: #228B22; /* forest green */
-}
-
-h2 {
-  color: #2e8b57; /* lighter green for h2 */
 }
