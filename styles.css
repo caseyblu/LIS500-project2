@@ -92,3 +92,87 @@ button:hover {
 }
 
 /* end resource page styles*/
+/* ---------------- TECH HERO SECTION ---------------- */
+#tech-hero {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 20px;
+  background-color: #fdfaf5; /* very light tan background */
+  color: #2a2a2a; /* dark gray text for readability */
+  line-height: 1.6;
+}
+
+.hero-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  flex: 0 0 160px;
+  max-width: 160px;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.hero-image .caption {
+  font-size: 12px;
+  color: #555;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.hero-text {
+  flex: 1 1 420px;
+  min-width: 260px;
+}
+
+.hero-text h2 {
+  margin: 0 0 12px 0;
+  font-size: 22px;
+  color: #2e8b57; /* slightly lighter green than h1 */
+}
+
+.hero-text p {
+  margin: 8px 0;
+  line-height: 1.5;
+  color: #222; /* dark gray for readability */
+}
+
+#tech-hero hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 18px 0;
+}
+
+.references {
+  font-size: 13px;
+  color: #444;
+}
+
+.references ul {
+  margin: 8px 0 0 18px;
+  padding: 0;
+}
+
+.references li {
+  margin-bottom: 4px;
+}
+
+/* Optional: headings for consistency with your global style */
+h1 {
+  color: #228B22; /* forest green */
+}
+
+h2 {
+  color: #2e8b57; /* lighter green for h2 */
+}
