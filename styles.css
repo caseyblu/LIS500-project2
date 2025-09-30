@@ -50,6 +50,14 @@ button:hover {
   background-color: #2e9c2e; /* lighter green on hover, matches h2 */
 }
 
+/* index page styles */
+
+.landing-photo {
+
+  width: 750px
+
+}
+
 /* resource page styles */
 
 .resource-wrap {
