@@ -4,68 +4,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LIS500 Project</title>
-  <!-- Link to your existing stylesheet -->
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-cardflip.css">
 </head>
-  <!-- //  body  // -->
 <body>
+  <!-- Header -->
   <header>
     <h1>LIS500 Project</h1>
-     <div class="topnav" class="index-text">
-        <a href="index.html">Home</a> 
-        <a href="about.html">About Us</a> 
-        <a class="active" href="techhero.html">Tech Hero</a> 
-        <a href="resource-guide.html">Resource Guide</a> 
-  </div>
+    <nav class="topnav index-text">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a class="active" href="techhero.html">Tech Hero</a>
+      <a href="resource-guide.html">Resource Guide</a>
+    </nav>
   </header>
 
   <main>
-    <section id="tech-hero" class="tech-hero">
+    <!-- Timnit Gebru -->
+    <section class="tech-hero">
       <div class="hero-container">
-    <!-- Local image -->
         <div class="hero-image">
           <img src="timnit.jpg" alt="Portrait of Timnit Gebru">
           <div class="caption">Timnit Gebru</div>
         </div>
-    <!-- //  Gebru bio text  // -->
         <div class="hero-text">
           <h2>Our Tech Hero — A Champion in Advancing AI Ethics</h2>
+          <p>Timnit Gebru is an Eritrean American computer scientist, activist, and leading voice in the field of AI ethics...</p>
+          <!-- trimmed for brevity -->
+        </div>
+      </div>
+    </section>
 
-          <p>
-            Timnit Gebru is an Eritrean American computer scientist, activist, and leading voice in the field of AI ethics. She has shaped the tech industry by exposing algorithmic bias and pushing for more diversity and accountability in AI. Her research showed how facial recognition tools often fail on women and people of color, making clear the real-world harms of biased systems.
-          </p>
+    <hr />
 
-          <p>
-            Gebru also reminds us that ethics in AI is not just about fixing code. It is about changing the structures behind it. She has called for transparency in how data is collected, more representation of marginalized voices, and accountability for the ways AI is used. By founding the Distributed AI Research Institute (DAIR), she created a space to study AI free from corporate influence and pressure.
-          </p>
+    <!-- Gabriela Salas Cabrera -->
+    <section class="tech-hero">
+      <div class="hero-container">
+        <div class="hero-image">
+          <img src="gabriela.jpg" alt="Portrait of Gabriela Salas Cabrera">
+          <div class="caption">Gabriela Salas Cabrera</div>
+        </div>
 
+        <div class="hero-text">
+          <h2>Our Tech Hero — Preserving Indigenous Languages with AI</h2>
+          <p>Gabriela Salas Cabrera is a programmer and data scientist born in Puerto del Caballo in Chapulhuacán, Hidalgo, Mexico...</p>
+          <!-- trimmed for brevity -->
           <p>
-            Through her work and advocacy, Timnit Gebru challenges the tech world to think about not only what AI can do but what it should do.
+            Here is a short interview with Cabrera: 
+            <a href="https://www.youtube.com/watch?v=o3y04OQwZp8" target="_blank">Watch on YouTube</a>.
           </p>
         </div>
       </div>
 
-      <hr />
-    <!-- //  References  // -->
-      <div class="references">
-        <strong>References</strong>
-        <ul>
-          <li>Timnit Gebru, <em>The Need for Independent Research on AI</em> (DAIR Institute, 2021).</li>
-          <li>Joy Buolamwini and Timnit Gebru, <em>Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification</em> (2018).</li>
-        </ul>
+      <!-- Card Flip Bio -->
+      <div class="card-section">
+        <p><strong>Click the card to see this bio in Náhuatl, translated using the Google Translate tool Cabrera helped implement!</strong></p>
+
+        <div class="card">
+          <div class="card-inner">
+            <!-- Front: English bio -->
+            <div class="card-front">
+              <h3>Gabriela Salas Cabrera</h3>
+              <p>
+                Gabriela Salas Cabrera is a programmer and data scientist born in Puerto del Caballo in Chapulhuacán, Hidalgo, Mexico. 
+                Her work focuses on the preservation of indigenous languages, and she is most well known for working with Google to add the Náhuatl language to Google Translate...
+              </p>
+            </div>
+
+            <!-- Back: Náhuatl translation -->
+            <div class="card-back">
+              <h3>Gabriela Salas Cabrera (Náhuatl)</h3>
+              <p>
+                Gabriela Salas Cabrera eli se programadora uan se ixtlamatki tlen tlakatki ipan Puerto del Caballo ipan Chapulhuacán, Hidalgo, México. 
+                Itequi mosentlalijtok ipan tlamokuitlauilistli tlen tlajtoli tlen indígenas, uan yajaya tlauel kiixmatij pampa tekiti ika Google para kitlalis nopa tlajtoli Náhuatl ipan Google Translate...
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    <!-- site nav links -->
-  <nav class="index-text">
-    <a href="index.html">Home</a> |
-    <a href="about.html">About Us</a> |
-    <a href="techhero.html">Tech Hero</a> |
-    <a href="resource-guide.html">Resource Guide</a> |
+    </section>
+
+    <hr />
+
+    <!-- References -->
+    <section class="references">
+      <h3>References</h3>
+      <ul>
+        <li>Timnit Gebru, <em>The Need for Independent Research on AI</em> (DAIR Institute, 2021).</li>
+        <li>Joy Buolamwini and Timnit Gebru, <em>Gender Shades</em> (2018).</li>
+        <li>BBC, <em>100 Women 2024: Gabriela Salas Cabrera</em>.</li>
+        <li>Gabriela Salas Cabrera, Interview on <em>Preserving Indigenous Languages with AI</em>, YouTube (2024).</li>
+      </ul>
     </section>
   </main>
-  <!-- //  Footer  // -->
-   <footer class="index-text">
-      <p>© 2025 by Aymen Hamdan, Alyssa Hannam, Casey Foubert </p>
-   </footer>
+
+  <!-- Footer -->
+  <footer class="index-text">
+    <p>© 2025 by Aymen Hamdan, Alyssa Hannam, Casey Foubert</p>
+  </footer>
 </body>
 </html>
 
