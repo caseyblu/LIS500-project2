@@ -50,7 +50,38 @@ button:hover {
   background-color: #2e9c2e; /* lighter green on hover, matches h2 */
 }
 
-/* index page styles */
+/* ---INDEX PAGE STYLES---- */
+
+/* link nav bar styles */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* color active/current link */
+.topnav a.active {
+  background-color: #228B22;
+  color: white;
+}
+
+/*photo and caption styles*/
 
 .landing-photo {
   display: flex;
@@ -70,7 +101,11 @@ button:hover {
 
 .index-blurb {
   text-align: center;
-  margin: 10px 50px 20px;
+  margin: 40px 50px 40px;
+}
+
+.blurb-box {
+    padding: 2px 10rem;
 }
 
 /* about page styles */
@@ -196,3 +231,46 @@ button:hover {
 .references li {
   margin-bottom: 4px;
 }
+
+/*index photo text overlay*/
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ /* loading animation */
+
+.fade-in {
+  color:white;
+  font-size: 5em;
+  animation: fade-in 2s ease 200ms backwards;
+}
+
+.fade-in-2 {
+ animation: fade-in 2s ease 900ms backwards;
+ color: white;
+}
+
+.fade-in-3 {
+    animation: fade-in 1s ease 2.4s backwards;
+}
+
+@keyframes fade-in {
+ from {
+  opacity: 0;
+ }
+ to {
+  opacity: 1;
+ }
+}
+
+
+ 
+
+
