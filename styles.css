@@ -192,7 +192,6 @@ button:hover {
   font-size: 12px;
   color: #555;
   margin-top: 6px;
-  text-align: center;
 }
 
 .hero-text {
@@ -209,21 +208,23 @@ button:hover {
 .hero-text h2 {
   margin: 0 0 12px 0;
   font-size: 22px;
-  color: #2e8b57; /* slightly lighter green than h1 */
+  color: #2e8b57;
 }
 
 .hero-text p {
   margin: 8px 0;
   line-height: 1.5;
-  color: #222; /* dark gray for readability */
+  color: #222;
 }
 
-#tech-hero hr {
+/* Horizontal rule between sections */
+.tech-hero hr {
   border: none;
   border-top: 1px solid #eee;
   margin: 18px 0;
 }
 
+/* ---------------- REFERENCES ---------------- */
 .references {
   font-size: 13px;
   color: #444;
@@ -257,7 +258,6 @@ button:hover {
 .card {
   width: 100%;
   max-width: 600px;
-  height: auto;
   margin: 1.5rem auto;
   perspective: 1000px;
   cursor: pointer;
@@ -274,7 +274,7 @@ button:hover {
   transform: rotateY(180deg);
 }
 
-.card-front, 
+.card-front,
 .card-back {
   position: absolute;
   width: 100%;
@@ -312,15 +312,18 @@ button:hover {
     align-items: center;
   }
 
-  .hero-image, .hero-text {
+  .hero-image, 
+  .hero-text {
     flex: 1 1 100%;
     text-align: center;
   }
 
-  .card-front, .card-back {
+  .card-front, 
+  .card-back {
     text-align: center;
   }
 }
+
 
 
 
