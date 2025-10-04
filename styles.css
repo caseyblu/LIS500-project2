@@ -163,7 +163,7 @@ button:hover {
   margin: 32px auto;
   padding: 20px;
   background-color: #fdfaf5; /* very light tan background */
-  color: #2a2a2a; /* dark gray text for readability */
+  color: #2a2a2a; /* dark gray text */
   line-height: 1.6;
 }
 
@@ -175,13 +175,13 @@ button:hover {
 }
 
 .hero-image {
-  flex: 0 0 200px; /* increased size */
+  flex: 0 0 200px;
   max-width: 200px;
   text-align: center;
 }
 
 .hero-image img {
-  width: 200px; /* increased size */
+  width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
@@ -203,13 +203,13 @@ button:hover {
 .hero-text h2 {
   margin: 0 0 12px 0;
   font-size: 22px;
-  color: #2e8b57; /* slightly lighter green than h1 */
+  color: #2e8b57;
 }
 
 .hero-text p {
   margin: 8px 0;
   line-height: 1.5;
-  color: #222; /* dark gray for readability */
+  color: #222;
 }
 
 #tech-hero hr {
@@ -218,56 +218,8 @@ button:hover {
   margin: 18px 0;
 }
 
-.references {
-  font-size: 13px;
-  color: #444;
-}
+.referenc
 
-.references ul {
-  margin: 8px 0 0 18px;
-  padding: 0;
-}
-
-.references li {
-  margin-bottom: 4px;
-}
-
-/*index photo text overlay*/
-.container {
-  position: relative;
-  text-align: center;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
- /* loading animation */
-
-.fade-in {
-  color:white;
-  font-size: 5em;
-  animation: fade-in 2s ease 200ms backwards;
-}
-
-.fade-in-2 {
- animation: fade-in 2s ease 900ms backwards;
- color: white;
-}
-
-.fade-in-3 {
-    animation: fade-in 1s ease 2.4s backwards;
-}
-
-@keyframes fade-in {
- from {
-  opacity: 0;
- }
- to {
-  opacity: 1;
- }
 }
 
 
