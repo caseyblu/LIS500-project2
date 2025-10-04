@@ -157,20 +157,20 @@ button:hover {
 }
 
 /* ---------------- TECH HERO SECTION ---------------- */
-#tech-hero {
+.tech-hero {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   max-width: 900px;
   margin: 32px auto;
   padding: 20px;
-  background-color: #fdfaf5; /* very light tan background */
-  color: #2a2a2a; /* dark gray text */
+  background-color: #fdfaf5; /* very light tan */
+  color: #2a2a2a; /* dark gray text for readability */
   line-height: 1.6;
 }
 
 .hero-container {
   display: flex;
   gap: 20px;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -200,16 +200,22 @@ button:hover {
   min-width: 260px;
 }
 
+.hero-text-full {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .hero-text h2 {
   margin: 0 0 12px 0;
   font-size: 22px;
-  color: #2e8b57;
+  color: #2e8b57; /* slightly lighter green than h1 */
 }
 
 .hero-text p {
   margin: 8px 0;
   line-height: 1.5;
-  color: #222;
+  color: #222; /* dark gray for readability */
 }
 
 #tech-hero hr {
@@ -218,9 +224,104 @@ button:hover {
   margin: 18px 0;
 }
 
-.referenc
-
+.references {
+  font-size: 13px;
+  color: #444;
 }
+
+.references ul {
+  margin: 8px 0 0 18px;
+  padding: 0;
+}
+
+.references li {
+  margin-bottom: 4px;
+}
+
+/* ---------------- VIDEO CONTAINER ---------------- */
+.video-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ---------------- CARD FLIP SECTION ---------------- */
+.card-section {
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 1.5rem auto;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, 
+.card-back {
+  position: absolute;
+  width: 100%;
+  padding: 1.5rem;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background-color: #fff;
+  color: #2a2a2a;
+  text-align: left;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background-color: #f9f9f9;
+}
+
+.card-front h3,
+.card-back h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #2e8b57;
+}
+
+.card-front p,
+.card-back p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-image, .hero-text {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .card-front, .card-back {
+    text-align: center;
+  }
+}
+
 
 
  
