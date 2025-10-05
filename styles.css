@@ -157,30 +157,30 @@ button:hover {
 }
 
 /* ---------------- TECH HERO SECTION ---------------- */
-.tech-hero {
+#tech-hero {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   max-width: 900px;
   margin: 32px auto;
   padding: 20px;
-  background-color: #fdfaf5; /* very light tan */
-  color: #2a2a2a; /* dark gray text for readability */
+  background-color: #fdfaf5;
+  color: #2a2a2a;
   line-height: 1.6;
 }
 
-.hero-container {
+#tech-hero .hero-container {
   display: flex;
   gap: 20px;
   align-items: flex-start;
   flex-wrap: wrap;
 }
 
-.hero-image {
+#tech-hero .hero-image {
   flex: 0 0 200px;
   max-width: 200px;
   text-align: center;
 }
 
-.hero-image img {
+#tech-hero .hero-image img {
   width: 200px;
   height: 200px;
   object-fit: cover;
@@ -188,106 +188,91 @@ button:hover {
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-.hero-image .caption {
+#tech-hero .hero-image .caption {
   font-size: 12px;
   color: #555;
   margin-top: 6px;
 }
 
-.hero-text {
+#tech-hero .hero-text {
   flex: 1 1 420px;
   min-width: 260px;
 }
 
-.hero-text-full {
+#tech-hero .hero-text-full {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
 }
 
-.hero-text h2 {
+#tech-hero .hero-text h2 {
   margin: 0 0 12px 0;
   font-size: 22px;
   color: #2e8b57;
 }
 
-.hero-text p {
+#tech-hero .hero-text p,
+#tech-hero .hero-text-full p {
   margin: 8px 0;
   line-height: 1.5;
   color: #222;
 }
 
-.tech-hero hr {
+#tech-hero hr {
   border: none;
   border-top: 1px solid #eee;
   margin: 18px 0;
 }
 
-/* ---------------- REFERENCES ---------------- */
-.references {
-  font-size: 13px;
-  color: #444;
-}
-
-.references ul {
-  margin: 8px 0 0 18px;
-  padding: 0;
-}
-
-.references li {
-  margin-bottom: 4px;
-}
-
-/* ---------------- VIDEO CONTAINER ---------------- */
-.video-container {
+/* ---------------- VIDEO ---------------- */
+#tech-hero .video-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 2rem auto;
-  width: 80%; /* larger video width */
+  width: 80%;
   max-width: 800px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-.video-container iframe {
+#tech-hero .video-container iframe {
   width: 100%;
   height: 450px;
-  border: 0;
   border-radius: 12px;
+  border: 0;
 }
 
-/* ---------------- CARD FLIP SECTION ---------------- */
-.card-section {
+/* ---------------- CARD FLIP ---------------- */
+#tech-hero .card-section {
   max-width: 700px;
   margin: 2rem auto;
   text-align: center;
 }
 
-.card {
+#tech-hero .card {
   width: 100%;
   max-width: 600px;
+  height: 300px;
   margin: 1.5rem auto;
   perspective: 1000px;
   cursor: pointer;
 }
 
-.card-inner {
+#tech-hero .card-inner {
   position: relative;
   width: 100%;
+  height: 100%;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
 
-.card:hover .card-inner {
+#tech-hero .card:hover .card-inner {
   transform: rotateY(180deg);
 }
 
-.card-front,
-.card-back {
+#tech-hero .card-front,
+#tech-hero .card-back {
   position: absolute;
   width: 100%;
+  height: 100%;
   padding: 1.5rem;
   backface-visibility: hidden;
   border-radius: 12px;
@@ -295,57 +280,60 @@ button:hover {
   background-color: #fff;
   color: #2a2a2a;
   text-align: left;
+  overflow-y: auto;
 }
 
-.card-back {
+#tech-hero .card-back {
   transform: rotateY(180deg);
   background-color: #f9f9f9;
 }
 
-.card-front h3,
-.card-back h3 {
+#tech-hero .card-front h3,
+#tech-hero .card-back h3 {
   margin-top: 0;
   font-size: 1.25rem;
   color: #2e8b57;
 }
 
-.card-front p,
-.card-back p {
+#tech-hero .card-front p,
+#tech-hero .card-back p {
   font-size: 1rem;
   line-height: 1.6;
 }
 
+/* ---------------- REFERENCES ---------------- */
+#tech-hero .references {
+  font-size: 13px;
+  color: #444;
+}
+
+#tech-hero .references ul {
+  margin: 8px 0 0 18px;
+  padding: 0;
+}
+
+#tech-hero .references li {
+  margin-bottom: 4px;
+}
+
 /* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 768px) {
-  .hero-container {
+  #tech-hero .hero-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .hero-image, 
-  .hero-text {
+  #tech-hero .hero-image,
+  #tech-hero .hero-text {
     flex: 1 1 100%;
     text-align: center;
   }
 
-  .hero-text-full {
-    max-width: 90%;
+  #tech-hero .hero-text-full {
+    max-width: 95%;
   }
 
-  .card-front,
-  .card-back {
-    text-align: center;
-  }
-
-  .video-container {
-    width: 95%;
-  }
-
-  .video-container iframe {
-    height: 350px;
-  }
-}
-
+  #
 }
 
 
