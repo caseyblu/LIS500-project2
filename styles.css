@@ -167,96 +167,72 @@ button:hover {
   line-height: 1.6;
 }
 
-#tech-hero .hero-container {
+.hero-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   align-items: flex-start;
-  flex-wrap: wrap;
 }
 
-#tech-hero .hero-image {
-  flex: 0 0 200px;
-  max-width: 200px;
+.hero-image {
+  flex: 0 0 300px;
+  max-width: 300px;
   text-align: center;
 }
 
-#tech-hero .hero-image img {
-  width: 200px;
-  height: 200px;
+.hero-image img,
+.hero-image .video-container iframe {
+  width: 100%;
+  height: 300px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-#tech-hero .hero-image .caption {
+.hero-image .caption {
   font-size: 12px;
   color: #555;
   margin-top: 6px;
 }
 
-#tech-hero .hero-text {
-  flex: 1 1 420px;
+.hero-text {
+  flex: 2 1 400px;
   min-width: 260px;
 }
 
-#tech-hero .hero-text-full {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-#tech-hero .hero-text h2 {
+.hero-text h2 {
   margin: 0 0 12px 0;
   font-size: 22px;
   color: #2e8b57;
 }
 
-#tech-hero .hero-text p,
-#tech-hero .hero-text-full p {
+.hero-text p {
   margin: 8px 0;
-  line-height: 1.5;
-  color: #222;
+  line-height: 1.6;
 }
 
-#tech-hero hr {
-  border: none;
-  border-top: 1px solid #eee;
-  margin: 18px 0;
-}
-
-/* ---------------- VIDEO ---------------- */
-#tech-hero .video-container {
+/* Video container */
+.video-container {
   display: flex;
   justify-content: center;
-  margin: 2rem auto;
-  width: 80%;
-  max-width: 800px;
 }
 
-#tech-hero .video-container iframe {
-  width: 100%;
-  height: 450px;
-  border-radius: 12px;
-  border: 0;
-}
-
-/* ---------------- CARD FLIP ---------------- */
-#tech-hero .card-section {
+/* Card Flip */
+.card-section {
   max-width: 700px;
-  margin: 2rem auto;
+  margin-top: 1.5rem;
   text-align: center;
 }
 
-#tech-hero .card {
+.card {
   width: 100%;
   max-width: 600px;
-  height: 300px;
-  margin: 1.5rem auto;
+  height: 350px;
+  margin: 1rem auto;
   perspective: 1000px;
-  cursor: pointer;
 }
 
-#tech-hero .card-inner {
+.card-inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -264,12 +240,12 @@ button:hover {
   transform-style: preserve-3d;
 }
 
-#tech-hero .card:hover .card-inner {
+.card:hover .card-inner {
   transform: rotateY(180deg);
 }
 
-#tech-hero .card-front,
-#tech-hero .card-back {
+.card-front,
+.card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -278,63 +254,68 @@ button:hover {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   background-color: #fff;
-  color: #2a2a2a;
-  text-align: left;
   overflow-y: auto;
 }
 
-#tech-hero .card-back {
+.card-back {
   transform: rotateY(180deg);
   background-color: #f9f9f9;
 }
 
-#tech-hero .card-front h3,
-#tech-hero .card-back h3 {
+.card-front h3,
+.card-back h3 {
   margin-top: 0;
   font-size: 1.25rem;
   color: #2e8b57;
 }
 
-#tech-hero .card-front p,
-#tech-hero .card-back p {
+.card-front p,
+.card-back p {
   font-size: 1rem;
   line-height: 1.6;
 }
 
-/* ---------------- REFERENCES ---------------- */
-#tech-hero .references {
+/* References */
+.references {
   font-size: 13px;
   color: #444;
 }
 
-#tech-hero .references ul {
+.references ul {
   margin: 8px 0 0 18px;
   padding: 0;
 }
 
-#tech-hero .references li {
+.references li {
   margin-bottom: 4px;
 }
 
-/* ---------------- RESPONSIVE ---------------- */
+/* Responsive */
 @media (max-width: 768px) {
-  #tech-hero .hero-container {
+  .hero-container {
     flex-direction: column;
     align-items: center;
   }
 
-  #tech-hero .hero-image,
-  #tech-hero .hero-text {
+  .hero-image,
+  .hero-text {
     flex: 1 1 100%;
     text-align: center;
   }
 
-  #tech-hero .hero-text-full {
-    max-width: 95%;
+  .card-front,
+  .card-back {
+    text-align: center;
   }
 
-  #
+  .hero-image img,
+  .hero-image .video-container iframe {
+    height: 250px;
+  }
 }
+
+
+
 
 
 
