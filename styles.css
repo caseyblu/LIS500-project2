@@ -268,10 +268,18 @@ button:hover {
   text-align: center;
 }
 
-.hero-image img,
-.hero-image iframe {
+.hero-image img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* Make video iframe bigger */
+.hero-image iframe {
+  width: 100%;
+  max-width: 400px; /* increased size */
+  height: 250px;    /* increased height */
   border-radius: 10px;
   box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
@@ -386,6 +394,7 @@ button:hover {
     height: 200px;
   }
 }
+
 
 
 
