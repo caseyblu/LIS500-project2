@@ -240,8 +240,8 @@ button:hover {
 /* ---------------- TECH HERO SECTION ---------------- */
 .hero {
   max-width: 950px;
-  margin: 60px auto;
-  padding: 40px 24px;
+  margin: 40px auto;
+  padding: 24px;
   background-color: #fdfaf5;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -249,10 +249,17 @@ button:hover {
 
 .hero-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+  align-items: flex-start;
+  gap: 30px;
   flex-wrap: wrap;
+}
+
+.hero-left .hero-container {
+  flex-direction: row;
+}
+
+.hero-right .hero-container {
+  flex-direction: row-reverse;
 }
 
 .hero-image {
@@ -277,15 +284,7 @@ button:hover {
 }
 
 .hero-text {
-  flex: 1 1 400px;
-}
-
-.hero-left .hero-container {
-  flex-direction: row;
-}
-
-.hero-right .hero-container {
-  flex-direction: row-reverse;
+  flex: 1 1 500px;
 }
 
 .hero-text h2 {
@@ -297,18 +296,19 @@ button:hover {
 .hero-text p {
   margin: 10px 0;
   line-height: 1.6;
-  color: #222;
 }
 
-/* ---------------- CARD FLIP INSIDE HERO ---------------- */
+/* ---------------- CARD FLIP ---------------- */
 .card-section {
-  margin-top: 20px;
-  max-width: 700px;
+  margin: 30px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
-  width: 100%;
-  height: 450px;
+  width: 300px;
+  height: 200px;
   perspective: 1000px;
 }
 
@@ -329,23 +329,25 @@ button:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 2rem;
-  backface-visibility: hidden;
+  padding: 1.5rem;
   border-radius: 12px;
+  backface-visibility: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   text-align: center;
+  flex-direction: column;
 }
 
+/* FRONT: dark green with white text */
 .card-front {
   background-color: #2e8b57;
-  color: white;
+  color: #ffffff; /* white front text */
   font-weight: bold;
 }
 
+/* BACK: light tan with dark text */
 .card-back {
   background-color: #fdfaf5;
   color: #2a2a2a;
@@ -353,10 +355,16 @@ button:hover {
   text-align: left;
 }
 
+.card-front p,
+.card-back p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 /* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 768px) {
   .hero-container {
-    flex-direction: column !important;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
   }
@@ -369,18 +377,16 @@ button:hover {
 
   .hero-image img,
   .hero-image iframe {
-    height: 250px;
+    max-width: 100%;
+    height: auto;
   }
 
   .card {
-    height: 400px;
-  }
-
-  .card-front p,
-  .card-back p {
-    font-size: 0.95rem;
+    width: 90%;
+    height: 200px;
   }
 }
+
 
 
 
