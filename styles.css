@@ -238,23 +238,21 @@ button:hover {
 }
 
 /* ---------------- TECH HERO SECTION ---------------- */
-.tech-hero {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+.hero {
   max-width: 950px;
-  margin: 80px auto; /* more consistent spacing between sections */
+  margin: 60px auto;
   padding: 40px 24px;
-  background-color: #fdfaf5; /* very light tan */
-  color: #2a2a2a;
-  line-height: 1.6;
+  background-color: #fdfaf5;
   border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* Aligns image and text better */
 .hero-container {
   display: flex;
   align-items: center;
-  gap: 40px; /* spacing between image and text */
-  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .hero-image {
@@ -267,69 +265,51 @@ button:hover {
 .hero-image iframe {
   width: 100%;
   height: auto;
-  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
 
-.hero-image .caption {
+.caption {
   font-size: 13px;
   color: #666;
   margin-top: 8px;
-}
-
-.hero-text {
-  flex: 1 1 auto;
-  min-width: 320px;
-  text-align: left;
-}
-
-.hero-text-full {
-  max-width: 700px;
-  margin: 0 auto 40px;
   text-align: center;
 }
 
+.hero-text {
+  flex: 1 1 400px;
+}
+
+.hero-left .hero-container {
+  flex-direction: row;
+}
+
+.hero-right .hero-container {
+  flex-direction: row-reverse;
+}
+
 .hero-text h2 {
-  margin-bottom: 12px;
   font-size: 24px;
   color: #2e8b57;
+  margin-bottom: 12px;
 }
 
 .hero-text p {
   margin: 10px 0;
-  color: #222;
   line-height: 1.6;
+  color: #222;
 }
 
-#tech-hero hr {
-  border: none;
-  border-top: 1px solid #ddd;
-  margin: 40px 0;
-}
-
-/* ---------------- VIDEO CONTAINER ---------------- */
-.video-container {
-  max-width: 640px;
-  margin: 3rem auto;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-}
-
-/* ---------------- CARD FLIP ---------------- */
+/* ---------------- CARD FLIP INSIDE HERO ---------------- */
 .card-section {
-  max-width: 750px;
-  margin: 3rem auto 4rem auto;
-  text-align: center;
+  margin-top: 20px;
+  max-width: 700px;
 }
 
 .card {
   width: 100%;
-  max-width: 620px;
-  height: 460px;
+  height: 450px;
   perspective: 1000px;
-  margin: 1.5rem auto;
 }
 
 .card-inner {
@@ -351,82 +331,40 @@ button:hover {
   height: 100%;
   padding: 2rem;
   backface-visibility: hidden;
-  border-radius: 14px;
+  border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  overflow-y: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
-/* Front: green with white text */
 .card-front {
   background-color: #2e8b57;
-  color: #ffffff;
-  font-weight: 600;
-  text-align: center;
+  color: white;
+  font-weight: bold;
 }
 
-.card-front h3 {
-  color: #ffffff;
-  margin-bottom: 12px;
-}
-
-.card-front p {
-  color: #ffffff;
-  text-align: center;
-  line-height: 1.6;
-}
-
-/* Back: tan with dark text */
 .card-back {
-  transform: rotateY(180deg);
   background-color: #fdfaf5;
   color: #2a2a2a;
+  transform: rotateY(180deg);
   text-align: left;
 }
 
-.card-back h3 {
-  margin-bottom: 10px;
-}
-
-.card-back p {
-  line-height: 1.6;
-}
-
-/* ---------------- REFERENCES ---------------- */
-.references {
-  font-size: 14px;
-  color: #444;
-  margin-bottom: 80px;
-}
-
-.references ul {
-  margin: 10px 0 0 20px;
-  padding: 0;
-}
-
-.references li {
-  margin-bottom: 6px;
-}
-
 /* ---------------- RESPONSIVE ---------------- */
-@media (max-width: 850px) {
+@media (max-width: 768px) {
   .hero-container {
-    flex-direction: column;
+    flex-direction: column !important;
     align-items: center;
-    gap: 24px;
+    gap: 20px;
   }
 
   .hero-image,
   .hero-text {
     flex: 1 1 100%;
     text-align: center;
-  }
-
-  .hero-text {
-    padding: 0 12px;
   }
 
   .hero-image img,
@@ -443,6 +381,7 @@ button:hover {
     font-size: 0.95rem;
   }
 }
+
 
 
 
