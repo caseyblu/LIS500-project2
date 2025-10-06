@@ -240,102 +240,103 @@ button:hover {
 /* ---------------- TECH HERO SECTION ---------------- */
 .tech-hero {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  max-width: 900px;
-  margin: 64px auto; /* more spacing between tech hero sections */
-  padding: 20px;
+  max-width: 950px;
+  margin: 80px auto; /* more consistent spacing between sections */
+  padding: 40px 24px;
   background-color: #fdfaf5; /* very light tan */
-  color: #2a2a2a; /* dark gray text */
+  color: #2a2a2a;
   line-height: 1.6;
+  border-radius: 12px;
 }
 
+/* Aligns image and text better */
 .hero-container {
   display: flex;
-  gap: 32px; /* more space between image and text */
-  align-items: flex-start;
-  flex-wrap: nowrap; /* keep image and text side by side */
+  align-items: center;
+  gap: 40px; /* spacing between image and text */
+  flex-wrap: nowrap;
 }
 
 .hero-image {
-  flex: 0 0 280px;
-  max-width: 280px;
-  text-align: left; /* left aligned image */
+  flex: 0 0 300px;
+  max-width: 300px;
+  text-align: center;
 }
 
 .hero-image img,
 .hero-image iframe {
   width: 100%;
-  height: auto; /* maintain aspect ratio */
+  height: auto;
   object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
 
 .hero-image .caption {
-  font-size: 12px;
-  color: #555;
-  margin-top: 6px;
-  text-align: left; /* caption aligned with image */
+  font-size: 13px;
+  color: #666;
+  margin-top: 8px;
 }
 
 .hero-text {
   flex: 1 1 auto;
-  min-width: 300px;
-  text-align: left; /* text stays left-aligned */
+  min-width: 320px;
+  text-align: left;
 }
 
 .hero-text-full {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
   text-align: center;
 }
 
 .hero-text h2 {
-  margin: 0 0 12px 0;
-  font-size: 22px;
+  margin-bottom: 12px;
+  font-size: 24px;
   color: #2e8b57;
 }
 
 .hero-text p {
-  margin: 8px 0;
-  line-height: 1.5;
+  margin: 10px 0;
   color: #222;
+  line-height: 1.6;
 }
 
 #tech-hero hr {
   border: none;
-  border-top: 1px solid #eee;
-  margin: 18px 0;
+  border-top: 1px solid #ddd;
+  margin: 40px 0;
 }
 
 /* ---------------- VIDEO CONTAINER ---------------- */
 .video-container {
-  max-width: 600px;
-  margin: 2rem auto;
+  max-width: 640px;
+  margin: 3rem auto;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
 /* ---------------- CARD FLIP ---------------- */
 .card-section {
-  max-width: 700px;
-  margin: 2rem auto 3rem auto;
+  max-width: 750px;
+  margin: 3rem auto 4rem auto;
   text-align: center;
 }
 
 .card {
   width: 100%;
-  max-width: 600px;
-  height: 450px;
+  max-width: 620px;
+  height: 460px;
   perspective: 1000px;
-  margin: 1rem auto;
+  margin: 1.5rem auto;
 }
 
 .card-inner {
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.8s;
+  transition: transform 0.8s ease;
   transform-style: preserve-3d;
 }
 
@@ -350,23 +351,35 @@ button:hover {
   height: 100%;
   padding: 2rem;
   backface-visibility: hidden;
-  border-radius: 12px;
+  border-radius: 14px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   overflow-y: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+/* Front: green with white text */
+.card-front {
+  background-color: #2e8b57;
+  color: #ffffff;
+  font-weight: 600;
   text-align: center;
 }
 
-/* Front is green with white text, centered */
-.card-front {
-  background-color: #2e8b57;
-  color: #FFFFFF;
-  font-weight: bold;
+.card-front h3 {
+  color: #ffffff;
+  margin-bottom: 12px;
 }
 
-/* Back is light tan with dark text */
+.card-front p {
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Back: tan with dark text */
 .card-back {
   transform: rotateY(180deg);
   background-color: #fdfaf5;
@@ -374,60 +387,63 @@ button:hover {
   text-align: left;
 }
 
-/* Titles inside card */
-.card-front h3,
 .card-back h3 {
-  margin-top: 0;
-  font-size: 1.25rem;
-  color: inherit;
+  margin-bottom: 10px;
 }
 
-.card-front p,
 .card-back p {
-  font-size: 1rem;
   line-height: 1.6;
-  text-align: left;
 }
 
 /* ---------------- REFERENCES ---------------- */
 .references {
-  font-size: 13px;
+  font-size: 14px;
   color: #444;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .references ul {
-  margin: 8px 0 0 18px;
+  margin: 10px 0 0 20px;
   padding: 0;
 }
 
 .references li {
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 /* ---------------- RESPONSIVE ---------------- */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .hero-container {
     flex-direction: column;
     align-items: center;
+    gap: 24px;
   }
 
   .hero-image,
   .hero-text {
     flex: 1 1 100%;
-    text-align: center; /* center only on mobile */
+    text-align: center;
   }
 
-  .card-front,
-  .card-back {
-    text-align: center;
+  .hero-text {
+    padding: 0 12px;
   }
 
   .hero-image img,
   .hero-image iframe {
     height: 250px;
   }
+
+  .card {
+    height: 400px;
+  }
+
+  .card-front p,
+  .card-back p {
+    font-size: 0.95rem;
+  }
 }
+
 
 
 
