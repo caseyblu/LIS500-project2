@@ -318,14 +318,16 @@ button:hover {
   width: 300px;
   height: 200px;
   perspective: 1000px;
+  margin: 0 auto;
 }
 
 .card-inner {
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.8s ease;
   transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+  overflow: hidden; /* Ensures content stays inside card */
 }
 
 .card:hover .card-inner {
@@ -337,22 +339,21 @@ button:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 1.5rem;
-  border-radius: 12px;
   backface-visibility: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  flex-direction: column;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 12px;
 }
 
 /* FRONT: dark green with white text */
 .card-front {
   background-color: #2e8b57;
-  color: #ffffff;
+  color: white;
   font-weight: bold;
+  text-align: center;
 }
 
 /* BACK: light tan with dark text */
@@ -361,12 +362,29 @@ button:hover {
   color: #2a2a2a;
   transform: rotateY(180deg);
   text-align: left;
+  overflow-y: auto; /* Scroll if content is long */
 }
 
 .card-front p,
 .card-back p {
   font-size: 1rem;
   line-height: 1.5;
+}
+
+/* ---------------- REFERENCES ---------------- */
+.references {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 60px;
+}
+
+.references ul {
+  margin: 8px 0 0 18px;
+  padding: 0;
+}
+
+.references li {
+  margin-bottom: 4px;
 }
 
 /* ---------------- RESPONSIVE ---------------- */
@@ -394,6 +412,7 @@ button:hover {
     height: 200px;
   }
 }
+
 
 
 
