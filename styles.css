@@ -239,86 +239,75 @@ button:hover {
 
 /* ---------------- TECH HERO SECTION ---------------- */
 .hero {
-  max-width: 950px;
-  margin: 40px auto;
-  padding: 24px;
-  background-color: #fdfaf5;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin: 60px auto;
+  max-width: 900px;
 }
 
 .hero-container {
   display: flex;
-  align-items: flex-start;
   gap: 30px;
+  align-items: flex-start;
   flex-wrap: wrap;
-}
-
-.hero-left .hero-container {
-  flex-direction: row;
-}
-
-.hero-right .hero-container {
-  flex-direction: row-reverse;
 }
 
 .hero-image {
   flex: 0 0 300px;
   max-width: 300px;
-  text-align: center;
 }
 
-.hero-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
-}
-
-/* Video bigger */
+.hero-image img,
 .hero-image iframe {
   width: 100%;
-  max-width: 400px;
-  height: 250px;
-  border-radius: 10px;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.caption {
-  font-size: 13px;
-  color: #666;
-  margin-top: 8px;
+.hero-image .caption {
+  font-size: 12px;
+  color: #555;
+  margin-top: 6px;
   text-align: center;
 }
 
 .hero-text {
-  flex: 1 1 500px;
+  flex: 1 1 400px;
 }
 
 .hero-text h2 {
-  font-size: 24px;
+  font-size: 22px;
   color: #2e8b57;
   margin-bottom: 12px;
 }
 
 .hero-text p {
-  margin: 10px 0;
-  line-height: 1.6;
+  margin: 8px 0;
+  line-height: 1.5;
+  color: #222;
+}
+
+#tech-hero hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 30px 0;
+}
+
+/* ---------------- VIDEO CONTAINER ---------------- */
+.hero iframe {
+  height: 300px;
 }
 
 /* ---------------- CARD FLIP ---------------- */
 .card-section {
-  margin: 30px 0;
-  width: 100%;
   display: flex;
   justify-content: center;
+  margin: 40px 0;
 }
 
 .card {
-  width: 300px;
-  height: 200px;
+  width: 360px;
+  height: 450px;
   perspective: 1000px;
-  margin: 0 auto;
 }
 
 .card-inner {
@@ -327,7 +316,6 @@ button:hover {
   height: 100%;
   transform-style: preserve-3d;
   transition: transform 0.8s ease;
-  overflow: hidden; /* Ensures content stays inside card */
 }
 
 .card:hover .card-inner {
@@ -339,35 +327,33 @@ button:hover {
   position: absolute;
   width: 100%;
   height: 100%;
+  border-radius: 12px;
+  padding: 1rem;
+  box-sizing: border-box;
   backface-visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  box-sizing: border-box;
-  border-radius: 12px;
 }
 
-/* FRONT: dark green with white text */
 .card-front {
   background-color: #2e8b57;
-  color: white;
+  color: white; /* front text white */
   font-weight: bold;
   text-align: center;
 }
 
-/* BACK: light tan with dark text */
 .card-back {
   background-color: #fdfaf5;
   color: #2a2a2a;
   transform: rotateY(180deg);
   text-align: left;
-  overflow-y: auto; /* Scroll if content is long */
+  overflow-y: auto; /* allows full paragraph to scroll */
 }
 
-.card-front p,
 .card-back p {
-  font-size: 1rem;
+  margin: 0;
+  font-size: 0.95rem;
   line-height: 1.5;
 }
 
@@ -392,7 +378,6 @@ button:hover {
   .hero-container {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
   }
 
   .hero-image,
@@ -401,17 +386,16 @@ button:hover {
     text-align: center;
   }
 
-  .hero-image img,
-  .hero-image iframe {
-    max-width: 100%;
-    height: auto;
+  .card-front,
+  .card-back {
+    text-align: center;
   }
 
-  .card {
-    width: 90%;
-    height: 200px;
+  .hero iframe {
+    height: 250px;
   }
 }
+
 
 
 
