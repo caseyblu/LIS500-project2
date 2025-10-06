@@ -297,7 +297,6 @@ button:hover {
   height: 300px;
 }
 
-/* ---------------- CARD FLIP ---------------- */
 .card-section {
   display: flex;
   justify-content: center;
@@ -306,7 +305,7 @@ button:hover {
 
 .card {
   width: 360px;
-  height: 450px;
+  height: 450px; /* enough for content */
   perspective: 1000px;
 }
 
@@ -314,8 +313,8 @@ button:hover {
   position: relative;
   width: 100%;
   height: 100%;
-  transform-style: preserve-3d;
   transition: transform 0.8s ease;
+  transform-style: preserve-3d;
 }
 
 .card:hover .card-inner {
@@ -346,9 +345,9 @@ button:hover {
 .card-back {
   background-color: #fdfaf5;
   color: #2a2a2a;
-  transform: rotateY(180deg);
+  transform: rotateY(180deg); /* back rotated */
   text-align: left;
-  overflow-y: auto; /* allows full paragraph to scroll */
+  overflow-y: auto; /* allows scrolling if paragraph too long */
 }
 
 .card-back p {
@@ -356,6 +355,7 @@ button:hover {
   font-size: 0.95rem;
   line-height: 1.5;
 }
+
 
 /* ---------------- REFERENCES ---------------- */
 .references {
