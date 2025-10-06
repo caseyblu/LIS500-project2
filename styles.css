@@ -275,11 +275,11 @@ button:hover {
   box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
 
-/* Make video iframe bigger */
+/* Video bigger */
 .hero-image iframe {
   width: 100%;
-  max-width: 400px; /* increased size */
-  height: 250px;    /* increased height */
+  max-width: 400px;
+  height: 250px;
   border-radius: 10px;
   box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
@@ -351,7 +351,7 @@ button:hover {
 /* FRONT: dark green with white text */
 .card-front {
   background-color: #2e8b57;
-  color: #ffffff; /* white front text */
+  color: #ffffff;
   font-weight: bold;
 }
 
@@ -394,6 +394,7 @@ button:hover {
     height: 200px;
   }
 }
+
 
 
 
