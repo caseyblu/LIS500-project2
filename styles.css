@@ -132,8 +132,12 @@ button:hover {
 /* about page styles */
 
 .about-text {
-
   text-align: center;
+  margin: 10px 10%;
+}
+
+.abt-img {
+  width: 260px;
 }
 
 /* resource page styles */
